@@ -44,4 +44,16 @@ function logInfo() {
   )[0].innerText;
   console.log(`The persons's name is ${name}`);
   console.log(`The persons's location is ${location}`);
+  console.log('The contact info with title and data goes here')
+
+  //Contact info
+  document.getElementById('top-card-text-details-contact-info').click();//selecting the contact info popup
+  setTimeout(() => {//giving popup the time to load waiting for 5 seconds
+    let contactSections= document.getElementsByClassName('pv-contact-info__contact-type');
+    for (let i = 0; i < contactSections.length; i++) {
+      let itemArray=contactSections[i].innerText.split('\n')
+      console.log(`The ${itemArray[0]} is: ${itemArray[1]}`);
+    }
+    document.getElementById('ember234').click()
+  }, 5000);
 }
