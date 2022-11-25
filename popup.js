@@ -44,5 +44,4 @@ function logInfo() {
   )[0].innerText;
   console.log(`The persons's name is ${name}`);
   console.log(`The persons's location is ${location}`);
-  // alert('he shiv')
 }
