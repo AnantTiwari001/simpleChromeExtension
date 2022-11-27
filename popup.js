@@ -11,11 +11,11 @@ document.getElementById("showTitle").addEventListener("click", function () {
 let urlArray = [
   "https://www.linkedin.com/in/aman-gupta-7217a515/",
   "https://www.linkedin.com/in/williamhgates/",
-  "https://www.linkedin.com/in/satyanadella/",
-  "https://www.linkedin.com/in/sivakumarbabujiofficial/",
-  "https://www.linkedin.com/in/kaushikmkj/",
-  "https://www.linkedin.com/in/anupamdubey/",
-  "https://www.linkedin.com/in/diegorodriguez/"
+  // "https://www.linkedin.com/in/satyanadella/",
+  // "https://www.linkedin.com/in/sivakumarbabujiofficial/",
+  // "https://www.linkedin.com/in/kaushikmkj/",
+  // "https://www.linkedin.com/in/anupamdubey/",
+  // "https://www.linkedin.com/in/diegorodriguez/"
 ];
 
 let profileBtn = document.getElementById("profiles");
