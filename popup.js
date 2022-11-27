@@ -20,11 +20,9 @@ let urlArray = [
 
 let profileBtn = document.getElementById("profiles");
 profileBtn.addEventListener("click", () => {
-
   for (let i = 0; i < urlArray.length; i++) {
     openTab(urlArray[i]);
   }
-
 });
 
 async function openTab(url) {
@@ -44,16 +42,23 @@ function logInfo() {
   )[0].innerText;
   console.log(`The persons's name is ${name}`);
   console.log(`The persons's location is ${location}`);
-  console.log('The contact info with title and data goes here')
+  console.log("The contact info with title and data goes here");
 
   //Contact info
-  document.getElementById('top-card-text-details-contact-info').click();//selecting the contact info popup
-  setTimeout(() => {//giving popup the time to load waiting for 5 seconds
-    let contactSections= document.getElementsByClassName('pv-contact-info__contact-type');
+  document.getElementById("top-card-text-details-contact-info").click(); //selecting the contact info popup
+  setTimeout(() => {
+    //giving popup the time to load waiting for 5 seconds
+    let contactSections = document.getElementsByClassName(
+      "pv-contact-info__contact-type"
+    );
     for (let i = 0; i < contactSections.length; i++) {
-      let itemArray=contactSections[i].innerText.split('\n')
+      let itemArray = contactSections[i].innerText.split("\n");
       console.log(`The ${itemArray[0]} is: ${itemArray[1]}`);
     }
-    document.getElementById('ember234').click()
+    document
+      .getElementsByClassName(
+        "artdeco-modal__dismiss artdeco-button artdeco-button--circle artdeco-button--muted artdeco-button--2 artdeco-button--tertiary ember-view"
+      )[0]
+      .click();
   }, 5000);
 }
